@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="projekt.GeneratorController"
+            prefHeight="300.0" prefWidth="300.0">
+    <VBox prefWidth="150">
+        <Text text="Liczba klientów"/>
+        <TextField promptText="Liczba klientów" fx:id="liczba_klientow"/>
+        <Text text="Liczba Fryzjerów"/>
+        <TextField promptText="Liczba Fryzjerów" fx:id="liczba_fryzjerow"/>
+        <Text text="Miejsca w poczekalni"/>
+        <TextField promptText="Miejsca w poczekalni" fx:id="miejsca_w_poczekalni"/>
+        <Text text="Liczba foteli"/>
+        <TextField promptText="Liczba foteli" fx:id="liczba_foteli"/>
+        <Text text="Liczba usług"/>
+        <TextField promptText="Liczba usług" fx:id="liczba_uslug"/>
+        <Text text="Długość animacji(ms)"/>
+        <TextField promptText="Długość animacji" fx:id="dlugosc_animacji"/>
+        <Button text="OK" onMouseClicked="#dalej"/>
+    </VBox>
+    <VBox translateX="150">
+        <Text text="Wyspecjalizowani fryzjerzy"/>
+        <Text fx:id="zostalo" text="Pozostało: 0"/>
+        <VBox fx:id="specjalizacje">
+
+        </VBox>
+        <Button text="Generuj" onMouseClicked="#generuj"/>
+    </VBox>
+
+</AnchorPane>
